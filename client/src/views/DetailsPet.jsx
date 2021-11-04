@@ -47,14 +47,15 @@ const DetailsPet = () => {
 
     return (
         <div>
-            <div className={styles.encabezado}>
+            <Link className={styles.linkNav} to="/">back to home</Link>
+
+            <div className={styles.header}>
                 <div>
                     <h2>Pet Shelter</h2>
-                    <p>Details about: {pet.petName} </p>
+                    <h2>Details about: {pet.petName} </h2>
                 </div>
 
                 <div>
-                    <Link to="/">back to home</Link>
                     <button className={styles.detailsButton} onClick={() => deletePet(pet._id)}>Adopt {pet.petName}</button>
                 </div>
 

@@ -58,9 +58,12 @@ const CreatePet = () => {
 
     return (
         <div >
-            <div className={styles.header}><h1>Pet Shelter</h1> <Link to="/">back to home</Link></div>
-            
-            <h2>Know a pet needing a home?</h2>
+            <Link className={styles.linkNav} to="/">back to home</Link>
+            <div className={styles.header}>
+                <h1>Pet Shelter</h1>
+                <h2>Know a pet needing a home?</h2>
+            </div>
+
             <div className={styles.createPetContainer}>
                 <Formik
                     initialValues={{
@@ -88,7 +91,7 @@ const CreatePet = () => {
                             <label htmlFor="petDescription">Description: </label>
                             <Field name="petDescription" type="text" />
                             {errors.petDescription && touched.petDescription ? <div className={styles.errors}>{errors.petDescription}</div> : null}
-
+                        
 
                             <label htmlFor="skill1">Skill 1: </label>
                             <Field name="skill1" type="text" />
