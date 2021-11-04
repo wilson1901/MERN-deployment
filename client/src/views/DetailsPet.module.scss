@@ -1,0 +1,22 @@
+.detailPetContainer{
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid black;
+    height: 300px;
+}
+
+.detailsButton {
+    background: red;
+    color: white
+}
+.encabezado div{
+    display: inline-block;
+    margin-left : 10%;
+}
+
+.encabezado *{
+    display: block;
+}
+.skills p, div{
+    display: inline-block;
+}

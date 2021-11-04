@@ -1,0 +1,27 @@
+.createPetContainer{
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid black;
+    height: 300px;
+}
+.formAdd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.addButton {
+    background: blue;
+    color: white
+}
+
+.header{
+    display: inline-block;
+    align-items: flex-end;
+  }
+
+h1{
+    display: inline-block;
+    
+  }
