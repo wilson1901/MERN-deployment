@@ -2,7 +2,7 @@ const Pet = require("../models/pet.model");
 
 module.exports.findAllPets = (req, res) => {
     console.log("findAllPets");
-    Pet.find()
+    Pet.find().sort({petType: 1})
         .then(allDaPets => res.json({ pets: allDaPets }))
         .catch(err => res.json({ message: "Something went wrong", error: err }));
 };

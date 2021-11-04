@@ -28,9 +28,13 @@ const ListPets = () => {
     
     return (
         <div>
-            <div className={styles.header}><h1>Pet Shelter</h1> <Link to="/pets/new"> add a pet to the shelter </Link></div>
+            <Link className={styles.linkNav} to="/pets/new"> add a pet to the shelter </Link>
+            <div className={styles.header}>
+                <h1>Pet Shelter</h1> 
+                <h2>These pets are looking for a good home</h2>
+
+            </div>
             
-            <h2>These pets are looking for a good home</h2>
 
             {
                 <table>
