@@ -1,13 +1,18 @@
 .detailPetContainer{
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
     border: 2px solid black;
     height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .detailsButton {
     background: red;
-    color: white
+    color: white;
+    float : right;
+    margin-top : -30px; 
+    margin-right: 10%;
 }
 .encabezado div{
     display: inline-block;

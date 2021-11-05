@@ -75,15 +75,18 @@ const EditPet = () => {
 
     return (
         <div>
-            <h2>Pet Shelter</h2>                     <Link to="/">back to home</Link>
+            <Link className={styles.linkNav} to="/">back to home</Link>
+            <div className={styles.header}>
+                <h1>Pet Shelter</h1>
+                <h2>Edit {pet.petName}</h2>
+            </div>
 
-            <p>Edit {pet.petName}</p>
 
             <div className={styles.editPetContainer}>
                 {
 
                     pet && (
-                        <Formik
+                        <Formik className={styles.formAdd}
                             enableReinitialize={true}
                             initialValues={pet}
                             validationSchema={SignupSchema}
@@ -91,7 +94,7 @@ const EditPet = () => {
 
                         >
                             {({ errors, touched }) => (
-                                <Form>
+                                <Form className={styles.formAdd}>
                                     <label htmlFor="petName">Pet Name: </label>
                                     <Field name="petName" />
                                     {errors.petName && touched.petName ? (<div className={styles.errors}>{errors.petName}</div>) : null}
@@ -118,7 +121,7 @@ const EditPet = () => {
                                     <Field name="skill3" type="text" />
                                     {errors.skill3 && touched.skill3 ? (<div className={styles.errors}>{errors.skill3}</div>) : null}
 
-                                    <button type="submit">Edit Pet</button>
+                                    <button  className={styles.addButton} type="submit">Edit Pet</button>
                                 </Form>
                             )}
                         </Formik>

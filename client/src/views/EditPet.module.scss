@@ -1,6 +1,30 @@
 .editPetContainer{
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
     border: 2px solid black;
     height: 300px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.linkNav{
+    float: right;
+    margin-top: 2%;
+    margin-right: 10%;
+}
+
+.formAdd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+.addButton {
+    background: blue;
+    color: white
 }
